@@ -41,9 +41,9 @@ So my excuse is to talk about the [holy war about spaces vs tabs](https://softwa
 
 To use FSFS, you can run the `fsfs.py` script with the appropriate arguments. For example:
 
-    ```
-    python fsfs.py ./
-    ```
+   ```bash
+   python fsfs.py ./
+   ```
 
 ### Ouput
 > Running over itself, I can free up 96 bytes
