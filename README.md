@@ -16,6 +16,7 @@ So my excuse is to talk about the [holy war about spaces vs tabs](https://softwa
 
 - Count whitespace in files.
 - Analyze whitespace distribution in directories.
+- Source code less than 2953 bytes for qr generation
 
 ## Installation
 
@@ -52,11 +53,28 @@ To use FSFS, you can run the `fsfs.py` script with the appropriate arguments. Fo
 File counts for 4 and 8 consecutive spaces:
 fsfs.py: 4 spaces: 54, 8 spaces: 28
 test_fsfs.py: 4 spaces: 33, 8 spaces: 8
+README.md: 4 spaces: 6, 8 spaces: 0
 
 Summary:
-Total files with 4 spaces: 2
+Total files with 4 spaces: 3
 Total files with 8 spaces: 2
-Total occurrences of 4 spaces: 87
-Total occurrences of 8 spaces: 36
-You can free up space replacing tabs for spaces. You recover 123 bytes.
+Total occurrences of 4 spaces: 93
+Total occurrences of 8 spaces: 3
+You can free up 129 bytes replacing tabs for spaces.
 ```
+
+## QR
+> You can download code vía QR code or distribute thru printed version
+
+![fsfs_qr](fsfs_qr.png)
+
+1. **Download QR software**
+
+    ```bash
+    sudo apt install qrencode
+    ```
+2. **Create QR from source code**
+
+    ```bash
+    qrencode -o fsfs_qr.png -r fsfs.py
+    ```
