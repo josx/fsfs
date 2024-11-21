@@ -2,7 +2,6 @@ import os
 import re
 from collections import defaultdict
 
-# Define a set of common programming file extensions
 PROGRAMMING_EXTENSIONS = {
     ".py",
     ".java",
@@ -73,7 +72,7 @@ def count_whitespace_in_directory(directory):
 
 def main(directory):
     if not os.path.isdir(directory):
-        print(f"The provided path '{directory}' is not a valid directory.")
+        print(f"'{directory}' is not a valid.")
         return
 
     file_counts, total_four_spaces, total_eight_spaces = count_whitespace_in_directory(
@@ -97,7 +96,7 @@ def main(directory):
 
     total_bytes_saved = (total_four_spaces) + (total_eight_spaces)
     print(
-        f"You can free up space replacing tabs for spaces. You recover {total_bytes_saved} bytes."
+        f"You can free up {total_bytes_saved} bytes replacing tabs for spaces."
     )
 
 
@@ -105,6 +104,6 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) != 2:
-        print("Usage: python count_whitespace.py <directory>")
+        print("Usage: python fsfs.py <directory>")
     else:
         main(sys.argv[1])
