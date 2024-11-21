@@ -50,14 +50,13 @@ To use FSFS, you can run the `fsfs.py` script with the appropriate arguments. Fo
 
 ```
 File counts for 4 and 8 consecutive spaces:
-fsfs.py: 4 spaces: 34, 8 spaces: 22
-test_fsfs.py: 4 spaces: 31, 8 spaces: 6
-README.md: 4 spaces: 3, 8 spaces: 0
+fsfs.py: 4 spaces: 54, 8 spaces: 28
+test_fsfs.py: 4 spaces: 33, 8 spaces: 8
 
 Summary:
-Total files with 4 spaces: 3
+Total files with 4 spaces: 2
 Total files with 8 spaces: 2
-Total occurrences of 4 spaces: 68
-Total occurrences of 8 spaces: 28
-You can free up space replacing tabs for spaces. You recover 96 bytes.
+Total occurrences of 4 spaces: 87
+Total occurrences of 8 spaces: 36
+You can free up space replacing tabs for spaces. You recover 123 bytes.
 ```
